@@ -1,0 +1,352 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+/*Global*/
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    width: 10%;
+    color: #70BC48;
+    padding: 0;
+    margin: 0;
+}
+
+.button_1 {
+    height: 35px;
+    background: #70BC48;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+/*Header*/
+
+header {
+    background: #3C3F41;
+    color: #ffffff;
+    padding-top: 0px;
+    max-height: 70px;
+    position: fixed;
+
+}
+
+header a {
+    color: #D3D3D3;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+header a:hover {
+    color: #70BC48;
+    font-style: italic;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 5px 0 5px;
+}
+
+header ul{
+    padding-left: 0;
+    margin-left: 0;
+}
+header #branding {
+    float: left;
+    color: orange;
+}
+
+header #branding h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+header nav {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+/*Showcase*/
+
+#showcase {
+    min-height: 400px;
+    background: url('../img/header.jpg') no-repeat 0 -400px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase .showcase_2 {
+    margin-top: 140px;
+    padding-bottom: 20px;
+}
+
+#showcase .showcase_2 h1 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#showcase .showcase_2 p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+#showcase .highlight_1 {
+    color: #70BC48;
+    font-style: italic;
+}
+
+#showcase input[type="button"] {
+    margin: 15px 5px 5px 5px;
+    padding: 5px;
+    text-decoration: none;
+    background: none;
+    color: #FFFFFF;
+    border: 2px solid #70BC48;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#showcase input[type="button"]:hover {
+    color: #70BC48;
+}
+
+/*About*/
+
+#about {
+    background: #F6F6F6;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#about h2 {
+    font-size: 30px;
+    padding: 0px;
+    margin: 20px 0 1px 0;
+}
+
+#about .about_sec {
+    margin-top: 10px;
+}
+
+#about .about_sec {
+    float: left;
+    text-align: left;
+    width: 30%;
+    padding: 10px;
+}
+
+#about .about_sec h3 {
+    font-size: 16px;
+}
+
+#about .about_sec p {
+    font-size: 14px;
+}
+
+/*Services*/
+
+#services {
+    background: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#services h2 {
+    font-size: 30px;
+    padding: 0px;
+    margin: 20px 0 1px 0;
+}
+
+#services .services_sec {
+    float: left;
+    text-align: left;
+    width: 23%;
+    padding: 10px;
+}
+
+#services .services_sec img {
+    width: 90px;
+}
+
+#services .services_sec h3 {
+    font-size: 16px;
+}
+
+#services .services_sec p {
+    font-size: 14px;
+}
+
+/*Portfolio*/
+
+#portfolio {
+    background: #F6F6F6;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#portfolio h2 {
+    font-size: 30px;
+    padding: 0px;
+    margin: 20px 0 1px 0;
+}
+
+.portfolio_sec {
+    position: relative;
+    width: 23%;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    max-height: 160px;
+    min-height: 160px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.portfolio_sec:hover .image {
+    opacity: 0.3;
+}
+
+.portfolio_sec:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 12px;
+    line-height: 1em;
+    padding: 2px;
+    font-style: italic;
+}
+
+/*Team*/
+
+#team {
+    background: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#team h2 {
+    font-size: 30px;
+    padding: 0px;
+    margin: 20px 0 1px 0;
+}
+
+#team .team_sec {
+    float: left;
+    text-align: left;
+    width: 23%;
+    padding: 10px;
+}
+
+#team .team_sec img {
+    width: 120px;
+    background: black;
+}
+
+#team .team_sec h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+#team .team_sec p {
+    font-size: 14px;
+    margin-top: -20px;
+    font-style: italic;
+}
+
+/*Contact*/
+
+#contact {
+    background: #F6F6F6;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 0;
+}
+
+#contact h2 {
+    font-size: 30px;
+    padding: 0px;
+    margin: 20px 0 1px 0;
+}
+
+#contact .contact_sec {
+    float: left;
+    width: 45%;
+    text-align: left;
+    padding: 10px;
+}
+
+#contact .contact_sec h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+#contact .contact_sec input,
+#contact .contact_sec textarea {
+    width: 60%;
+    padding: 3px;
+}
+
+/*Footer*/
+
+footer {
+    background: #3C3F41;
+    color: #ffffff;
+    padding-top: 0px;
+    max-height: 300px;
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+}
+
+footer p {
+    padding: 20px;
+}
